@@ -335,8 +335,8 @@ bot.use((ctx, next) => {
 
 bot.command('q', handleQuote)
 bot.hears(/\/q_(.*)/, handleGetQuote)
-bot.hears(/^\/qs(?:\s([^\s]+)|)/, handleFstik)
-bot.hears(/^\/qs(?:\s([^\s]+)|)/, onlyGroup, onlyAdmin, handleSave)
+bot.hears(/^\/sv(?:\s([^\s]+)|)/, handleFstik)
+bot.hears(/^\/sv(?:\s([^\s]+)|)/, onlyGroup, onlyAdmin, handleSave)
 bot.command('qd', onlyGroup, onlyAdmin, handleDelete)
 bot.command('qdrand', onlyGroup, onlyAdmin, handleDeleteRandom)
 bot.hears(/^\/qcolor(?:(?:\s(?:(#?))([^\s]+))?)/, onlyAdmin, handleColorQuote)
